@@ -1,0 +1,48 @@
+<html>
+<head>
+ <title>Homework01_JS_special</title>
+<script type="text/javascript">
+	function Main()
+	{
+	
+	array1 = ["Pak", "Ind","Lhr","Isb","PHYsics"]
+	Mix = []
+	//Converting Array to a string and showing it on page
+	
+	
+	var btn = document.getElementById('btnExecute');
+		
+		btn.onclick = function()
+		{
+
+			for(i=0;i<array1.length;i++)
+			{
+				word = i%2
+				if(word == 0)
+				{
+					Mix[i] = array1[i].toUpperCase();
+				}
+				else
+				{
+					Mix[i] = array1[i].toLowerCase();
+				}
+			}
+			alert(Mix);
+			
+		
+
+		
+		};//end of onclick
+		
+	}//end of Main
+	
+	
+	
+</script>
+
+</head>
+<body onload="Main();">
+	<h1 id='data'></h1>
+	<button id="btnExecute">Execute</button> <br>
+</body>
+</html>
